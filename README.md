@@ -11,7 +11,6 @@
 
 <br />
 
-- Loves a freshly brewed cup of coffee
 
 <img align="left" width="400" alt="🦑" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 
