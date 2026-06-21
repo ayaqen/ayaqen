@@ -60,3 +60,13 @@ jobs:
           plugin_achievements_display: compact
           config_display: large
           output_action: pull-request-squash
+       
+      - name: ✅ Auto-merge metrics PRs
+        if: ${{ success() || failure() }}
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          for pr in $(gh pr list --state open --json number,title \
+              --jq '.[] | select(.title | test("metrics")) | .number'); do
+            gh pr merge "$pr" --squash --delete-branch || true
+          done
