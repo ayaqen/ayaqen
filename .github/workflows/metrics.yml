@@ -1,4 +1,7 @@
-# This worflow is scheduled for every hour, and also run after each commit (GitHub action excluded) on master/main branch
+# This workflow is scheduled every hour, and also runs after each commit
+# (GitHub Action commits excluded) on the master/main branch.
+# Place this file at: .github/workflows/metrics.yml
+
 name: Metrics
 on:
   schedule:
@@ -12,6 +15,7 @@ jobs:
   github-metrics-personal:
     runs-on: ubuntu-latest
     steps:
+
       - name: 🦑 Personal metrics
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -24,13 +28,14 @@ jobs:
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, gnuplot, vue, scala, ejs
           plugin_languages_skipped: lowlighter
           plugin_languages_details: lines, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_indepth: yes
+          plugin_languages_sections: most-used
+          plugin_languages_indepth: no
           plugin_languages_limit: 4
+
           plugin_discussions: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
-          output_action: pull-request 
-          
+          output_action: pull-request
+
       - name: 🦑 Mastered topics
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -43,7 +48,7 @@ jobs:
           plugin_topics_mode: mastered
           config_display: large
           output_action: pull-request-squash
-          
+
       - name: 🦑 Personal achievements
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -55,3 +60,13 @@ jobs:
           plugin_achievements_display: compact
           config_display: large
           output_action: pull-request-squash
+       
+      - name: ✅ Auto-merge metrics PRs
+        if: ${{ success() || failure() }}
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          for pr in $(gh pr list --state open --json number,title \
+              --jq '.[] | select(.title | test("metrics")) | .number'); do
+            gh pr merge "$pr" --squash --delete-branch || true
+          done
