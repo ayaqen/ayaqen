@@ -19,5 +19,3 @@
 <img align="right" width="100%" alt="🦑" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.personal.achievements.svg">
 
 <img align="right" width="100%" alt="🦑" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.plugin.notable.svg">
-
-<img align="right" width="100%" alt="trophies" src="https://github-profile-trophy.vercel.app/?username=ayaqen&theme=flat&no-frame=true&row=1&column=6">
