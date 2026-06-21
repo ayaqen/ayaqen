@@ -49,7 +49,7 @@ jobs:
           config_display: large
           output_action: pull-request-squash
 
-      - name: 🦑 Personal achievements
+      - name: 🦑 Achievements
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
