@@ -45,7 +45,7 @@ jobs:
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
-          plugin_topics_mode: mastered
+          plugin_topics_mode: starred
           config_display: large
           output_action: pull-request-squash
 
