@@ -18,4 +18,5 @@
 
 
 <img align="right" width="100%" alt="🦑" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.personal.achievements.svg">
+
 <img align="right" width="100%" alt="🦑" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.projects.svg">
