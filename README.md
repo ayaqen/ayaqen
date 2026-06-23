@@ -10,7 +10,7 @@
 
 <br />
 
-- Building AI-powered products
+- coffee
 
 <img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 <img align="right" width="100%" alt="topics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.topics.mastered.svg">
