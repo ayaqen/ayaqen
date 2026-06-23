@@ -1,4 +1,4 @@
-# Hello  👋
+# Hello World 👋
 <div align="left">
   <a href="https://www.linkedin.com/in/ayub-sanchez-y-6a24413a0">
     <img
@@ -7,8 +7,11 @@
     />
   </a>
 </div>
+
 <br />
-<img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/Personal.metrics.svg">
+
+- Building AI-powered products
+
+<img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 <img align="right" width="100%" alt="topics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.topics.mastered.svg">
-<img align="right" width="100%" alt="notable" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.plugin.notable.svg">
-<img align="left" width="50%" alt="repository" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.repository.svg">
+<img align="right" width="100%" alt="achievements" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.personal.achievements.svg">
