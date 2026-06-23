@@ -1,4 +1,3 @@
-# Scheduled hourly, and also runs after each commit (GitHub Action commits excluded) on main.
 name: Metrics
 on:
   schedule:
@@ -31,7 +30,7 @@ jobs:
           config_order: base.header, isocalendar, languages, discussions
           output_action: commit
 
-      - name: 🦑 Starred topics
+      - name: 🦑 Mastered topics
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
@@ -40,45 +39,18 @@ jobs:
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
-          plugin_topics_mode: starred
+          plugin_topics_mode: mastered
           config_display: large
           output_action: commit
 
-      - name: 🦑 Notable contributions
+      - name: 🏆 Achievements
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.notable.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_notable: yes
-          plugin_notable_types: commit, pull_request
-          config_display: large
-          output_action: commit
-
-      - name: 🦑 Repository
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          template: repository
-          filename: metrics.repository.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ayaqen
-          repo: ayaqen
-          plugin_lines: yes
-          plugin_followup: yes
-          output_action: commit
-
-          - name: 🏆 Achievements
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.achievements.svg
+          filename: metrics.personal.achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_achievements: yes
           plugin_achievements_display: compact
-          plugin_achievements_only: maintainer, stargazer, member, developer, polyglot, deployer
-          plugin_achievements_threshold: X
           config_display: large
           output_action: commit
