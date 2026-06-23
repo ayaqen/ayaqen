@@ -10,8 +10,9 @@
 
 <br />
 
-- coffee
+- Building AI-powered products
 
 <img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 <img align="right" width="100%" alt="topics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.topics.mastered.svg">
-<img align="right" width="100%" alt="achievements" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.personal.achievements.svg">
+<img align="right" width="100%" alt="notable" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.plugin.notable.svg">
+<img align="right" width="100%" alt="trophies" src="https://github-profile-trophy.vercel.app/?username=ayaqen&theme=flat&no-frame=true&margin-w=8&row=2&column=6">
