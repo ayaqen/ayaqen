@@ -1,4 +1,4 @@
-# Hello World 👋
+# Hello 👋
 <div align="left">
   <a href="https://www.linkedin.com/in/ayub-sanchez-y-6a24413a0">
     <img
@@ -15,11 +15,10 @@
 <img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 <img align="right" width="100%" alt="topics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.topics.mastered.svg">
 <img align="right" width="100%" alt="notable" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.plugin.notable.svg">
-<img align="right" width="100%" alt="trophies" src="https://github-profile-trophy.vercel.app/?username=ayaqen&theme=flat&no-frame=true&margin-w=8&row=2&column=6">
 
 
 ### 🤖 Building AI agents & tooling
-Python · LangGraph · MCP · evaluation   |   🎓 WCC → UMSI-bound
+Python · LangGraph · MCP · evaluation   |   🎓 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?logo=langchain)
