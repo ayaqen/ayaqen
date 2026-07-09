@@ -14,10 +14,11 @@ jobs:
     steps:
       - name: 🦑 Personal metrics
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3
         with:
           filename: metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          user: ayaqen
           base: header
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
@@ -27,33 +28,32 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_indepth: no
           plugin_languages_limit: 4
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
           plugin_discussions: yes
-          config_order: base.header, isocalendar, languages, habits, discussions
+          config_order: base.header, isocalendar, languages, discussions
           output_action: commit
 
       - name: 🦑 Topics (icon wall)
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3
         with:
           filename: metrics.topics.mastered.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          user: ayaqen
           base: ""
           plugin_topics: yes
-          plugin_topics_limit: 0
+          plugin_topics_limit: 12
           plugin_topics_sort: stars
-          plugin_topics_mode: icons
+          plugin_topics_mode: mastered
           config_display: large
           output_action: commit
 
       - name: 🦑 Notable contributions
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3
         with:
           filename: metrics.plugin.notable.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          user: ayaqen
           base: ""
           plugin_notable: yes
           plugin_notable_types: commit, pull_request
