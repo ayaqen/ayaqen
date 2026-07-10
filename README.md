@@ -14,7 +14,7 @@ Student by day, shipping AI products by night. Building BonusStack and a few thi
 
 <img align="left" width="400" alt="metrics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.svg">
 <img align="right" width="100%" alt="topics" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.topics.mastered.svg">
-<img align="right" width="100%" alt="notable" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.plugin.notable.svg">
+<img align="right" width="100%" alt="achievements" src="https://github.com/ayaqen/ayaqen/blob/main/metrics.personal.achievements.svg">
 
 
 ### 🤖 Building AI agents & tooling
@@ -29,7 +29,5 @@ Python · LangGraph · MCP · evaluation   |   🎓
 - **revkit** — reversibility / undo primitives for agent tool calls ⭐
 - **<your-mcp>** — focused MCP server, published to the registry ⭐
 - **evaldiff** — CLI to diff & score LLM eval runs
-
-![stats](https://github-readme-stats.vercel.app/api?username=ayaqen&show_icons=true&hide_border=true)
 
 > *Ship beats perfect.*
