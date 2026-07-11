@@ -10,7 +10,12 @@
 
 <br />
 
-University Student by day, shipping AI products by night. Previously convinced myself I'd "just learn Python" — that escalated.
+<p align="center"> University Student by day, shipping AI products by night. 
+  </p>
+
+<p align="center"> 
+  Previously convinced myself I'd "just learn Python" that escalated.
+</p>
 i could use a dupio Esspresso ☕
 
 <p align="center">
