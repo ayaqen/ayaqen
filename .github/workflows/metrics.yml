@@ -41,6 +41,7 @@ jobs:
           plugin_topics: yes
           plugin_topics_limit: 20
           plugin_topics_mode: mastered
+          # Keep the profile icon order aligned with starred GitHub Topics.
           plugin_topics_sort: starred
 
           plugin_achievements: yes
