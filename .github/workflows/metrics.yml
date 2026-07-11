@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Personal metrics
-        uses: lowlighter/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1
+        uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: ayaqen
@@ -45,7 +45,7 @@ jobs:
           use_prebuilt_image: no
 
       - name: Mastered topics
-        uses: lowlighter/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1
+        uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: ayaqen
@@ -64,7 +64,7 @@ jobs:
           use_prebuilt_image: no
 
       - name: Personal achievements
-        uses: lowlighter/metrics@1e49d0b8b932624dd7762147e35ccc137eda09f1
+        uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: ayaqen
