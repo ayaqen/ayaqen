@@ -1,4 +1,5 @@
- 👋
+ <p align="center">👋 
+ </p>
 <div align="center">
   <a href="https://www.linkedin.com/in/ayub-sanchez-y-6a24413a0">
     <img
