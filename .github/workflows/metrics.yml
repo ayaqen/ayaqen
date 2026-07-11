@@ -39,7 +39,7 @@ jobs:
           plugin_discussions: yes
 
           plugin_topics: yes
-          plugin_topics_limit: 0
+          plugin_topics_limit: 20
           plugin_topics_mode: mastered
 
           plugin_achievements: yes
