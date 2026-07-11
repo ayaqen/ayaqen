@@ -16,8 +16,9 @@
 <p align="center"> 
   Previously convinced myself I'd "just learn Python" that escalated.
 </p>
+<p align="center">
 i could use a dupio Esspresso ☕
-
+</p>
 <p align="center">
   <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="100%">
 </p>
