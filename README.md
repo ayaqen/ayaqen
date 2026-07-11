@@ -12,32 +12,15 @@
 
 Student by day, shipping AI products by night. Building BonusStack and a few things that aren't ready yet. Previously convinced myself I'd "just learn Python" — that escalated.
 
-
-
 ### 🤖 Building AI agents & tooling
-Python · LangGraph · MCP · evaluation   |   🎓 
+Python · LangGraph · MCP · evaluation   |   🎓
 
 <p align="center">
-  <img src="./metrics.svg" alt="GitHub metrics" width="480">
-</p>
-
-<p align="center">
-  <img
-    src="./metrics.topics.mastered.svg"
-    alt="Mastered technologies and topics"
-    width="100%"
-  >
-</p>
-
-<p align="center">
-  <img
-    src="./metrics.personal.achievements.svg"
-    alt="GitHub achievements"
-    width="100%"
-  >
+  <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="100%">
 </p>
 
 #### ▸ Start here
+
 - **revkit** — reversibility / undo primitives for agent tool calls ⭐
 - **<your-mcp>** — focused MCP server, published to the registry ⭐
 - **evaldiff** — CLI to diff & score LLM eval runs
