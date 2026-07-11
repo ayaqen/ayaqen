@@ -23,7 +23,7 @@ jobs:
     timeout-minutes: 60
 
     steps:
-      - name: Personal metrics
+      - name: Profile metrics, topics, and achievements
         uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -38,39 +38,10 @@ jobs:
           plugin_languages_limit: 5
           plugin_discussions: yes
 
-          config_timezone: America/Detroit
-          output_action: commit
-          output_condition: data-changed
-          plugins_errors_fatal: yes
-          use_prebuilt_image: no
-
-      - name: Mastered topics
-        uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ayaqen
-          filename: metrics.topics.mastered.svg
-
-          base: ""
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: mastered
 
-          config_display: large
-          config_timezone: America/Detroit
-          output_action: commit
-          output_condition: data-changed
-          plugins_errors_fatal: yes
-          use_prebuilt_image: no
-
-      - name: Personal achievements
-        uses: gh-metrics/metrics@4b1c3eb0b801b3fe1821352c4f5f9329d09f4ebf
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: ayaqen
-          filename: metrics.personal.achievements.svg
-
-          base: ""
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
