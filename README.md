@@ -11,9 +11,7 @@
 <br />
 
 University Student by day, shipping AI products by night. Previously convinced myself I'd "just learn Python" — that escalated.
-i could use a dupio Esspresso <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/81b06b18-f71b-474e-ad1b-3c7cdb3c77af" />
-
-
+i could use a dupio Esspresso ☕
 ### 🤖 Building AI agents & tooling
 Python · LangGraph · MCP · evaluation   |   🎓
 
