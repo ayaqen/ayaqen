@@ -12,17 +12,11 @@
 
 University Student by day, shipping AI products by night. Previously convinced myself I'd "just learn Python" — that escalated.
 i could use a dupio Esspresso ☕
-### 🤖 Building AI agents & tooling
-Python · LangGraph · MCP · evaluation   |   🎓
 
 <p align="center">
   <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="100%">
 </p>
 
-#### ▸ Start here
 
-- **revkit** — reversibility / undo primitives for agent tool calls ⭐
-- **<your-mcp>** — focused MCP server, published to the registry ⭐
-- **evaldiff** — CLI to diff & score LLM eval runs
 
-> *Ship beats perfect.*
+ Ship beats different.
