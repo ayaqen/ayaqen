@@ -21,7 +21,7 @@
 i could use a dupio Esspresso ☕
 </p>
 <p align="center">
-  <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="100%">
+  <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="480">
 </p>
 
 
