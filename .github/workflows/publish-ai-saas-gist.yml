@@ -1,0 +1,78 @@
+name: Publish AI SaaS checklist gist
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-ai-saas-gist.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-gist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Create public gist
+        id: gist
+        env:
+          GH_GIST_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_GIST_TOKEN:-}" ]; then
+            echo "METRICS_TOKEN is not configured."
+            exit 1
+          fi
+
+          payload=$(jq -n \
+            --arg description "A practical production-readiness checklist for AI SaaS founders and developers" \
+            --rawfile content AI_SAAS_PRODUCTION_CHECKLIST.md \
+            '{
+              description: $description,
+              public: true,
+              files: {
+                "ai-saas-production-checklist.md": {
+                  content: $content
+                }
+              }
+            }')
+
+          response=$(curl --fail-with-body --silent --show-error \
+            --request POST \
+            --url https://api.github.com/gists \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${GH_GIST_TOKEN}" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            --data "$payload")
+
+          gist_url=$(printf '%s' "$response" | jq -r '.html_url // empty')
+          gist_id=$(printf '%s' "$response" | jq -r '.id // empty')
+
+          if [ -z "$gist_url" ] || [ -z "$gist_id" ]; then
+            echo "GitHub did not return a gist URL."
+            printf '%s\n' "$response"
+            exit 1
+          fi
+
+          printf '%s\n' "$gist_url" > GIST_URL.txt
+          printf 'gist_url=%s\n' "$gist_url" >> "$GITHUB_OUTPUT"
+
+      - name: Record gist URL
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add GIST_URL.txt
+          git commit -m "Record AI SaaS checklist gist URL"
+          git push
+
+      - name: Publish result
+        run: echo "Created ${{ steps.gist.outputs.gist_url }}"
