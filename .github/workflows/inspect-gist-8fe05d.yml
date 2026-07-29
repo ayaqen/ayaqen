@@ -1,6 +1,7 @@
 name: Inspect existing gist
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -47,7 +48,7 @@ jobs:
             echo
           } > GIST_INSPECTION.md
 
-          printf '%s' "$response" | jq -r '.files | to_entries[] | "### `\(.key)`\n\n```\n\(.value.content // "[content truncated or unavailable]")\n```\n"' >> GIST_INSPECTION.md
+          printf '%s' "$response" | jq -r '.files | to_entries[] | "### `\(.key)`\n\n```\n\(.value.content // \"[content truncated or unavailable]\")\n```\n"' >> GIST_INSPECTION.md
 
       - name: Commit inspection result
         shell: bash
