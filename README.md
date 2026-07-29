@@ -1,5 +1,5 @@
- <p align="center">👋 
- </p>
+<p align="center">👋</p>
+
 <div align="center">
   <a href="https://www.linkedin.com/in/ayub-sanchez-y-6a24413a0">
     <img
@@ -11,19 +11,23 @@
 
 <br />
 
-<p align="center"> University Student by day, shipping AI products by night. 
-  </p>
+<p align="center">University Student by day, shipping AI products by night.</p>
 
-<p align="center"> 
-  Previously convinced myself I'd "just learn Python" that escalated.
-</p>
 <p align="center">
-i could use a dupio Esspresso ☕
+  Previously convinced myself I'd "just learn Python". That escalated.
 </p>
+
+<p align="center">
+  I could use a doppio espresso ☕
+</p>
+
 <p align="center">
   <img src="./metrics.svg" alt="GitHub profile metrics, mastered technologies, and achievements" width="480">
 </p>
 
+<p align="center">
+  <a href="./AI_SAAS_PRODUCTION_CHECKLIST.md"><strong>AI SaaS Production Readiness Checklist</strong></a><br>
+  A practical checklist for taking an AI product from demo to production.
+</p>
 
-
- Ship beats different.
+<p align="center">Ship beats different.</p>
